@@ -25,8 +25,7 @@
  ### Output
  <img src="https://github.com/SahilTarale/Weather-APP/blob/master/Output/image1.jpg?raw=true" width="700">
  <img src="https://github.com/SahilTarale/Weather-APP/blob/master/Output/image2.jpg?raw=true" width="700">
- <img src="https://github.com/SahilTarale/Weather-APP/blob/master/Output/image3.jpg?raw=true" width="700">
+ <img src="https://github.com/SahilTarale/Weather-APP/blob/master/Output/image3.jpg?raw=true" width="700"> 
  
- ![img!](https://github.com/SahilTarale/Weather-APP/blob/master/Output/image1.jpg?raw=true)
  
   **_Enjoy using Weather APP to get up-to-date weather information for your desired city!_**
