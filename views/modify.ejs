@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Forecast</title>
+  <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color:  #E3F4FE !important;
+    }
+    .cardhead {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin-bottom: 30px;
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 20%;
+    }
+    h1, h2 {
+      color: black !important;
+      margin-top: 0;
+    }
+    .card-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .card-text {
+      font-size: 20px;
+    }
+    .img_head{
+      margin-left: 10%;
+      width:50%;
+      height: 50%;
+    }
+    .cloud-temp{
+      margin-bottom: 8%;
+    }
+    .container{
+      margin-bottom: 7%;
+    }
+    .title{
+      margin-bottom: 5%;
+    }
+  .sub-title{
+    margin-bottom: 3%;
+  }
+  
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <h1 class="text-center title">Weather Forecast for <%= data.cityName %></h1>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="cardhead">
+          <a href="#today"><h2 ><%= data.tdDate %></h2></a>     
+            
+              <img class="img_head" src="images/<%= data.d1 %>.png" alt="Weather Icon" class="img-fluid">          
+           
+              <h1><%= data.t1 %>℃</h1>       
+                    
+          <H3 class="cloud-temp"><%= data.d1 %></H3>
+          
+          <div class="row ">
+            <div class="col-lg-6">
+                <h4 class="temp"><iconify-icon icon="wi:humidity" ></iconify-icon> Humidity</h4>
+                <h4 class="template"><%= data.h1 %> %</h4>
+            </div>
+            <div class="col-lg-6">
+                <h4 class="temp"><iconify-icon icon="wi:strong-wind" ></iconify-icon> Wind</h4>
+                <h4 class="template"><%= data.w1 %>km/h</h4>
+               
+            </div>
+        </div>
+
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="cardhead">
+          <a href="#tommorrow"><h2><%= data.tom %></h2></a>
+          <img class="img_head" src="images/<%= data.d2 %>.png" alt="Weather Icon" class="img-fluid">          
+           
+          <h1><%= data.t2 %>℃</h1> 
+          <H3 class="cloud-temp"><%= data.d2 %></H3> 
+          <div class="row ">
+            <div class="col-lg-6">
+                <h4 class="temp"><iconify-icon icon="wi:humidity" ></iconify-icon> Humidity</h4>
+                <h4 class="template"><%= data.h2 %> %</h4>
+            </div>
+            <div class="col-lg-6">
+                <h4 class="temp"><iconify-icon icon="wi:strong-wind" ></iconify-icon> Wind</h4>
+                <h4 class="template"><%= data.w2 %>km/h</h4>
+               
+            </div>
+        </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="cardhead">
+          <a href="#DayAfter"><h2><%= data.dayAfter %></h2></a>
+          <img class="img_head" src="images/<%= data.d3 %>.png" alt="Weather Icon" class="img-fluid">          
+           
+          <h1><%= data.t3 %>℃</h1>
+          <H3 class="cloud-temp"><%= data.d3 %></H3>
+          <div class="row ">
+            <div class="col-lg-6">
+                <h4 class="temp"><iconify-icon icon="wi:humidity" ></iconify-icon> Humidity</h4>
+                <h4 class="template"><%= data.h3 %> %</h4>
+            </div>
+            <div class="col-lg-6">
+                <h4 class="temp"><iconify-icon icon="wi:strong-wind" ></iconify-icon> Wind</h4>
+                <h4 class="template"><%= data.w3 %>km/h</h4>
+               
+            </div>
+        </div>
+        </div>
+  </div>
+
+  <h1 class="sub-title" id="today">Today</h1>
+    <div class="container" >
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card-deck">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">9:00 AM</h5>
+                <p class="card-text"><img src="images/<%= data.tdD1 %>.png"/> <%= data.tdT1 %>℃</p>
+                <p class="card-text"><%= data.tdD1 %></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">12:00 PM</h5>
+                <p class="card-text"><img src="images/<%= data.tdD2 %>.png"/> <%= data.tdT2 %>℃</p>
+                <p class="card-text"><%= data.tdD2 %></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">3:00 PM</h5>
+                <p class="card-text"><img src="images/<%= data.tdD3 %>.png"/> <%= data.tdT3 %>℃</p>
+                <p class="card-text"><%= data.tdD3 %></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">6:00 PM</h5>
+                <p class="card-text"><img src="images/<%= data.tdD4 %>.png"/><%= data.tdT4 %>℃</p>
+                <p class="card-text"><%= data.tdD4 %></p>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">9:00 PM</h5>
+                <p class="card-text"><img src="images/<%= data.tdD5 %>.png"/> <%= data.tdT5 %>℃</p>
+                <p class="card-text"><%= data.tdD5 %></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  
+
+
+  <h1 class="sub-title" id="tommorrow">Tomorrow</h1>
+
+  <div class="container " >
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card-deck">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">9:00 AM</h5>
+              <p class="card-text"><img src="images/<%= data.tomD1 %>.png"/> <%= data.tomT1 %>℃</p>
+              <p class="card-text"><%= data.tomD1 %></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">12:00 PM</h5>
+              <p class="card-text"><img src="images/<%= data.tomD2 %>.png"/><%= data.tomT2 %>℃</p>
+              <p class="card-text"><%= data.tomD2 %></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">3:00 PM</h5>
+              <p class="card-text"><img src="images/<%= data.tomD3 %>.png"/> <%= data.tomT3 %>℃</p>
+              <p class="card-text"><%= data.tomD3 %></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">6:00 PM</h5>
+              <p class="card-text"><img src="images/<%= data.tomD4 %>.png"/><%= data.tomT4 %>℃</p>
+              <p class="card-text"><%= data.tomD4 %></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">9:00 PM</h5>
+              <p class="card-text"><img src="images/<%= data.tomD5 %>.png"/> <%= data.tomT5 %>℃</p>
+              <p class="card-text"><%= data.tomD5 %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <h1 class="sub-title" id="DayAfter">Day after Tomorrow</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card-deck">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">9:00 AM</h5>
+              <p class="card-text"><img src="images/<%= data.dfD1 %>.png"/><%= data.dfT1 %>℃</p>
+              <p class="card-text"><%= data.dfD1 %></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">12:00 PM</h5>
+              <p class="card-text"><img src="images/<%= data.dfD2 %>.png"/><%= data.dfT2 %>℃</p>
+              <p class="card-text"><%= data.dfD2 %></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">3:00 PM</h5>
+              <p class="card-text"><img src="images/<%= data.dfD3 %>.png"/> <%= data.dfT3 %>℃</p>
+              <p class="card-text"><%= data.dfD3 %></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">6:00 PM</h5>
+              <p class="card-text"><img src="images/<%= data.dfD4 %>.png"/> <%= data.dfT4 %>℃</p>
+              <p class="card-text"><%= data.dfD4 %></p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">9:00 PM</h5>
+              <p class="card-text"><img src="images/<%= data.dfD5 %>.png"/> <%= data.dfT5 %>℃</p>
+              <p class="card-text"><%= data.dfD5 %></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+</body>
+</html>

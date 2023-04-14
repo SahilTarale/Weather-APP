@@ -1,0 +1,87 @@
+
+body{
+  background-color: #47B5FF !important;
+  /* color: #0AA1DD !important; */
+}
+.title{
+  margin: 10% 30%;
+  border-radius: 5% !important;
+  background-color:aliceblue !important;
+}
+
+
+.brand{
+  margin-bottom: 5% !important;
+  color: #0AA1DD;
+  font-weight: 500 !important;
+  margin-bottom: 3% ;
+}
+
+input[type="text"]{
+  width: 200px;
+  text-align: center;
+  border: none;
+  font-size: 20px;
+  font-weight: 200;
+  height: 50px;
+  
+  margin-left: 5%;
+}
+input[type="text"]:focus {
+  outline-color: #0AA1DD;
+  font-weight:600;
+ 
+}
+::placeholder {
+  color: #0AA1DD;
+  opacity: 1;
+}
+.button{
+ padding: 2% 5% !important;
+  margin-left: 35%;
+  font-size: 20px !important;
+  font-weight: 400 !important;
+}
+
+.temp{
+  text-align: center ;
+  color: black !important;
+  margin-bottom: 4%;
+}
+.template{
+  margin-left: 32%;
+}
+
+/* .last{
+   
+  border-bottom: 1px solid #0AA1DD;
+} */
+
+.image{
+  width: 150px;
+  height: 150px;
+  margin-left: 34%;
+  margin-right: auto;
+}
+.validation {
+  text-align: center;
+  color: red;
+  margin-bottom: 10%;
+}
+
+
+.button{
+  margin-left: 65%;
+  margin-right: 5% ;
+  border-radius: 12px !important;
+}
+.titlebar{
+  font-size: larger;
+  font-weight: bolder;
+  font-style: italic;
+}
+
+.logo{
+  width: 50%;
+  height: 50%;
+}

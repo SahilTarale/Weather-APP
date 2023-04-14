@@ -1,0 +1,24 @@
+<%- include('header')  -%>
+
+
+        <h1><%= cityName %></h1>
+        <img class="image"src="css/cloud.png">
+
+        <h1 class="display-4  brand temp"><%= temperature %>℃</h1>
+
+        <h2 class="temp"><%= cloud_forecast %></h2>
+
+        <div class="row ">
+            <div class="col-lg-6">
+                <h3 class="temp"><iconify-icon icon="wi:humidity" ></iconify-icon> Humidity</h3>
+                <h3 class="template"><%= humidity %> %</h3>
+            </div>
+            <div class="col-lg-6">
+                <h3 class="temp"><iconify-icon icon="wi:strong-wind" ></iconify-icon> Wind</h3>
+                <h3 class="template"><%= wind %>km/h</h3>
+            </div>
+        </div>
+
+
+
+<%- include('footer')  -%>

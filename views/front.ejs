@@ -1,0 +1,13 @@
+<%- include('header') -%>
+
+<div class="jumbotron jumbotron-fluid title  ">
+    <div class="container content  ">
+  
+  <form action="/front" method="post">
+    <h2 class="display-4   brand">WeatherApp</h2>
+    <h3>Enter City :<input type="text" name="cityName" placeholder="City Name" autocomplete="off"> </h3>
+    <p class="validation"><%= validation %></p>
+    <button type="submit" class="btn btn-primary button">Check it!</button>
+  </form>
+  
+  <%- include('footer') -%>
