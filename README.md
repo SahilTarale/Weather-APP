@@ -20,8 +20,8 @@
 
 ## Output :
  
- <img src="Output/image4.jpg" width="700">
- <img src="Output/image1.jpg" width="700">
+ <img src="https://github.com/SahilTarale/Weather-APP/blob/master/Output/image4.jpg?raw=true" width="700">
+ <img src="https://github.com/SahilTarale/Weather-APP/blob/master/Output/image1.jpg?raw=true" width="700">
  <img src="Output/image2.jpg" width="700">
  <img src="Output/image3.jpg" width="700">
  
