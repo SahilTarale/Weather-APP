@@ -15,7 +15,7 @@
 ## Technology Used 
 
    - Front-end : HTML, CSS, JavaScript
-   - Back-end : Node.js, EJS, 
+   - Back-end : Node.js, Exprees.js, EJS
    - Third-party API : OpenWeather API 
 
 ## Screenshots 
